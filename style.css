@@ -127,7 +127,7 @@ section{
     width: 50%;
 }
 .main-container .image img{
-    width: 100%;
+    width: 59%;
 }
 .main-container .content{
     color: black;
@@ -177,7 +177,7 @@ section{
         content: "Designer";
     }
     67%, 100%{
-        content: "Operator";
+        content: "Administrator";
     }
 }
 .content p{
@@ -204,27 +204,33 @@ section{
     background-color: rgb(109,67, 0);
     filter: drop-shadow(0 0 10px rgb(109,67,0));
 }
-.content button{
+.content .download-btn {
+    display: inline-block; /* Ensures the <a> tag behaves like a button */
     width: 40%;
     height: 6vh;
     margin: 30px;
-    background-color: rgb(109,67, 0);
+    background-color: rgb(109, 67, 0);
     color: white;
-    border: none;
-    outline: none;
+    text-align: center;
+    line-height: 6vh; /* Aligns text vertically inside the button */
+    text-decoration: none; /* Removes underline from the link */
     font-size: 100%;
     font-weight: 700;
+    border: none;
+    outline: none;
     border-radius: 5px;
     transition: 0.2s linear;
 }
-.content button:hover{
- scale: 1.1;
- color: rgb(109,67, 0);
- border: 2px solid rgb(109,67, 0);
- background-color: transparent;
- font-weight: 700;
- box-shadow: 0 0 40px rgb(109,67, 0);
+
+.content .download-btn:hover {
+    transform: scale(1.1); /* Adds smooth scaling effect */
+    color: rgb(109, 67, 0);
+    border: 2px solid rgb(109, 67, 0);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(109, 67, 0);
 }
+
 @media (max-width:884px) {
     body{
         overflow-y: visible;
